@@ -54,7 +54,7 @@
         const locationButton = document.createElement("button");
         locationButton.textContent = "GPS";
         locationButton.classList.add("custom-map-control-button");
-        map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(
+        map.controls[google.maps.ControlPosition.LEFT_TOP].push(
           locationButton
         );
         locationButton.addEventListener("click", () => {
