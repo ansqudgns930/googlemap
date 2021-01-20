@@ -12,7 +12,25 @@
 <body>
 
   
-  
+  function clickCounter() {
+
+    if(typeof(Storage) !== "undefined") {
+
+        if (localStorage.clickcount) { 
+
+            localStorage.clickcount = Number(localStorage.clickcount) + 1; 
+
+        } else { 
+
+            localStorage.clickcount = 1; 
+
+        }
+
+        document.getElementById("counter").innerHTML = "카운터의 현재 횟수는 " + localStorage.clickcount + "입니다!";
+
+    }
+
+}
   
   
  <script>
